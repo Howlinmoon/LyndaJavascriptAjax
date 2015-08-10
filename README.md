@@ -1,4 +1,4 @@
 # LyndaJavascriptAjax
 
 Start here the next time:
-http://www.lynda.com/Ajax-tutorials/Scripting-backwards-compatibility/114900/120866-4.html
+http://www.lynda.com/Ajax-tutorials/Reading-JSON-files/114900/120871-4.html
