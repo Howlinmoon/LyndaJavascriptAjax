@@ -1,22 +1,8 @@
-var mybutton = document.getElementById('loadbutton');
-mybutton.onclick = function() {
-	var request;
-	if (window.XMLHttpRequest) {
-		request = new XMLHttpRequest();
-	} else {
-		request = new ActiveXObject("Microsoft.XMLHTTP");
-	}
-	request.open('GET', 'data.json');
-	request.onreadystatechange = function() {
-		if ((request.readyState===4) && (request.status===200)) {
-			var items = JSON.parse(request.responseText);
-			var output = '<ul>';
-			for (var key in items) {
-				output += '<li>' + items[key].name + '</li>';
-			}
-			output += '</ul>';
-			document.getElementById('update').innerHTML = output;
-		}
-	}
-	request.send();
-} // loadAJAX
+// Using JQuery - find the update tag, and insert the contents of data.txt
+$('#update').load('data.txt');
+// Now - we update the div with the class 'classname'
+// $('.classname').load('data.txt');
+// Here we are only updating the FIRST instance of 'classname'
+//$('.classname:first').load('data.txt');
+// Here we are updating only the even numbered instances
+$('.classname:even').load('data.txt');
