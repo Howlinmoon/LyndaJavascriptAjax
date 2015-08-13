@@ -48,7 +48,7 @@ body {
     padding: 0;
 }
 
-#update li {
+#update ul li {
 
     width: 100%;
     padding: 0 20px;
@@ -57,6 +57,16 @@ body {
     height: 110px;
     overflow: hidden;
     border-bottom: 1px dotted #CCC;
+    
+    -webkit-animation: myanim 1s;
+    -moz-animation: myanim 1s;
+    -o-animation: myanim 1s;
+    animation: myanim 1s;
+    
+    -webkit-transistion: height 0.3s ease-out;
+    -moz-transistion: height 0.3s ease-out;
+    -o-transistion: height 0.3s ease-out;
+    transistion: height 0.3s ease-out;
 }
 
 
@@ -89,6 +99,27 @@ body {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+}
+
+@-webkit-keyframes myanim {
+    0% { opacity: 0.3; }
+    100% {opacity: 1.0; }
+}
+
+@-moz-keyframes myanim {
+    0% { opacity: 0.3; }
+    100% {opacity: 1.0; }
+}
+
+@-o-keyframes myanim {
+    0% { opacity: 0.3; }
+    100% {opacity: 1.0; }
+}
+
+@keyframes myanim {
+    0% { opacity: 0.3; }
+    100% {opacity: 1.0; }
+}
 
 
 
